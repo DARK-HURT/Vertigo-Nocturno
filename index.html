@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vértigo Nocturno - Canal de Terror</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a; /* Dark background */
+            color: #e5e5e5; /* Light text */
+        }
+        .text-shadow-glow {
+            text-shadow: 0 0 8px rgba(255, 0, 0, 0.7), 0 0 15px rgba(255, 0, 0, 0.5);
+        }
+        .button-glow {
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.6), 0 0 20px rgba(255, 0, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+        .button-glow:hover {
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 0 30px rgba(255, 0, 0, 0.6);
+            transform: translateY(-2px);
+        }
+        .video-thumbnail {
+            transition: transform 0.3s ease;
+        }
+        .video-thumbnail:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-gray-900 py-4 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+            <!-- Logo and Channel Name -->
+            <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                <img src="https://placehold.co/60x60/1a202c/e2e8f0?text=VN" alt="Logo Vértigo Nocturno" class="rounded-full border-2 border-red-700">
+                <a href="#" class="text-3xl font-bold text-red-600 tracking-wider text-shadow-glow">Vértigo Nocturno</a>
+            </div>
+            <!-- Navigation -->
+            <nav class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-lg">
+                <a href="#hero" class="text-gray-300 hover:text-red-500 transition duration-300">Inicio</a>
+                <a href="#videos" class="text-gray-300 hover:text-red-500 transition duration-300">Videos</a>
+                <a href="#about" class="text-gray-300 hover:text-red-500 transition duration-300">Acerca de</a>
+                <a href="#contact" class="text-gray-300 hover:text-red-500 transition duration-300">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative h-screen bg-cover bg-center flex items-center justify-center text-center p-4"
+        style="background-image: url('https://placehold.co/1920x1080/0d0d0d/8c0000?text=Vértigo+Nocturno+Hero');">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-red-500 mb-6 leading-tight text-shadow-glow">
+                Sumérgete en la Oscuridad del Miedo
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-10 leading-relaxed">
+                Historias, leyendas urbanas y análisis de lo paranormal. ¿Estás listo para el Vértigo Nocturno?
+            </p>
+            <a href="https://www.youtube.com/@cccpdeadmonk" target="_blank"
+               class="inline-block bg-red-700 hover:bg-red-800 text-white font-bold py-4 px-8 rounded-lg text-xl button-glow transition duration-300">
+                <i class="fab fa-youtube mr-3"></i> ¡Suscríbete Ahora!
+            </a>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="py-16 bg-gray-950 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-red-500 mb-12 text-shadow-glow">Nuestros Últimos Videos</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Video 1 -->
+                <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden video-thumbnail">
+                    <img src="https://placehold.co/640x360/2c3e50/ecf0f1?text=El+Vecino+del+AirDrop" alt="Miniatura de video 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">El Vecino del AirDrop</h3>
+                        <p class="text-gray-400 text-sm mb-4">La historia que te hará pensar dos veces antes de aceptar algo de un desconocido...</p>
+                        <a href="https://www.youtube.com/watch?v=VIDEO_ID_1" target="_blank" class="text-red-500 hover:text-red-400 font-medium transition duration-300">Ver Video <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <!-- Video 2 -->
+                <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden video-thumbnail">
+                    <img src="https://placehold.co/640x360/34495e/ecf0f1?text=El+Pasajero+del+Uber+Fantasma" alt="Miniatura de video 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">El Pasajero del Uber Fantasma</h3>
+                        <p class="text-gray-400 text-sm mb-4">Un viaje que nunca llegó a su destino. ¿Estás seguro de quién te lleva?</p>
+                        <a href="https://www.youtube.com/@cccpdeadmonk" target="_blank" class="text-red-500 hover:text-red-400 font-medium transition duration-300">Ver Video <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <!-- Video 3 -->
+                <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden video-thumbnail">
+                    <img src="https://placehold.co/640x360/1abc9c/ecf0f1?text=El+No+Visto+de+los+DM" alt="Miniatura de video 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">El "No Visto" de los Mensajes Directos</h3>
+                        <p class="text-gray-400 text-sm mb-4">Cuando un mensaje directo no se lee, pero alguien sabe que lo enviaste...</p>
+                        <a href="https://www.youtube.com/watch?v=VIDEO_ID_3" target="_blank" class="text-red-500 hover:text-red-400 font-medium transition duration-300">Ver Video <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <!-- Video 4 -->
+                <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden video-thumbnail">
+                    <img src="https://placehold.co/640x360/f39c12/ecf0f1?text=Playlists+Que+Predicen" alt="Miniatura de video 4" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">Los Playlists Que Predicen Tu Muerte</h3>
+                        <p class="text-gray-400 text-sm mb-4">¿Puede tu música favorita ser una cuenta regresiva para el final?</p>
+                        <a href="https://www.youtube.com/watch?v=VIDEO_ID_4" target="_blank" class="text-red-500 hover:text-red-400 font-medium transition duration-300">Ver Video <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                 <!-- Video 5 -->
+                 <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden video-thumbnail">
+                    <img src="https://placehold.co/640x360/e74c3c/ecf0f1?text=Desafío+RA" alt="Miniatura de video 5" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">El Desafío del Filtro de Realidad Aumentada</h3>
+                        <p class="text-gray-400 text-sm mb-4">Un filtro inofensivo puede abrir una puerta a lo desconocido...</p>
+                        <a href="https://www.youtube.com/watch?v=VIDEO_ID_5" target="_blank" class="text-red-500 hover:text-red-400 font-medium transition duration-300">Ver Video <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <!-- Video 6 -->
+                <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden video-thumbnail">
+                    <img src="https://placehold.co/640x360/9b59b6/ecf0f1?text=Top+5+Leyendas" alt="Miniatura de video 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">Top 5 Leyendas Urbanas Modernas</h3>
+                        <p class="text-gray-400 text-sm mb-4">Las historias más aterradoras que circulan por internet. ¿Cuál te mantendrá despierto?</p>
+                        <a href="https://www.youtube.com/watch?v=VIDEO_ID_6" target="_blank" class="text-red-500 hover:text-red-400 font-medium transition duration-300">Ver Video <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="https://www.youtube.com/channel/YOUR_CHANNEL_ID/videos" target="_blank"
+                   class="inline-block bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg text-lg button-glow transition duration-300">
+                    Ver Más Videos <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-900 px-4">
+        <div class="container mx-auto max-w-3xl text-center">
+            <h2 class="text-4xl font-bold text-red-500 mb-8 text-shadow-glow">Acerca de Vértigo Nocturno</h2>
+            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                En <strong>Vértigo Nocturno</strong>, exploramos las profundidades del terror moderno, las leyendas urbanas más escalofriantes
+                y los misterios que acechan en las sombras de la era digital. Nuestro canal es tu puerta de entrada
+                a un mundo de miedo, paranoia y lo inexplicable.
+            </p>
+            <p class="text-gray-300 text-lg leading-relaxed">
+                Cada video está diseñado para sumergirte en historias que desafían la realidad y te harán cuestionar
+                lo que crees saber. Prepárate para noches de insomnio y para una dosis de puro terror psicológico.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section (simple placeholder) -->
+    <section id="contact" class="py-16 bg-gray-950 px-4">
+        <div class="container mx-auto max-w-3xl text-center">
+            <h2 class="text-4xl font-bold text-red-500 mb-8 text-shadow-glow">Contáctanos</h2>
+            <p class="text-gray-300 text-lg mb-6">
+                ¿Tienes alguna historia que contar o quieres contactarnos? ¡Nos encantaría saber de ti!
+            </p>
+            <a href="mailto:tuemail@example.com"
+               class="inline-block bg-red-700 hover:bg-red-800 text-white font-bold py-3 px-6 rounded-lg text-lg button-glow transition duration-300">
+                <i class="fas fa-envelope mr-2"></i> Envíanos un Email
+            </a>
+            <p class="text-gray-400 text-sm mt-8">
+                También puedes encontrarnos en YouTube y otras redes sociales.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 py-8 mt-12">
+        <div class="container mx-auto text-center px-4">
+            <p class="text-gray-400 mb-4">&copy; 2025 Vértigo Nocturno. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.youtube.com/@cccpdeadmonk" target="_blank" class="text-gray-400 hover:text-red-500 transition duration-300">
+                    <i class="fab fa-youtube text-3xl"></i>
+                </a>
+                <!-- Add other social media links here if desired -->
+                <!-- <a href="#" target="_blank" class="text-gray-400 hover:text-red-500 transition duration-300">
+                    <i class="fab fa-twitter text-3xl"></i>
+                </a>
+                <a href="#" target="_blank" class="text-gray-400 hover:text-red-500 transition duration-300">
+                    <i class="fab fa-instagram text-3xl"></i>
+                </a> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
